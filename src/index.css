@@ -1,0 +1,92 @@
+.main {
+  width: 100%;
+  min-height: 300px;
+  align-items: center;
+  padding: 50px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: .1; /* Ensure the video covers the entire container */
+}
+
+
+#identity{
+  font-size: 30px;
+}
+.board-row {
+  display: flex;
+}
+
+.square {
+  font-size: 50px;
+  width: 100px;
+  height: 100px;
+  border: 5px solid rgb(111, 145, 238); /* Add border to create lines */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* status of the player and the winner code here >>>>*/
+.status{
+  font-size: 40px;
+  padding: 40px;
+}
+#playAgain{
+  font-size: 30px;
+  border: 4px solid black;
+  border-radius: 10px;
+  transition: .4s ease;
+}
+#playAgain:hover{
+  box-shadow: 4px 4px rgb(83, 81, 81);
+  border: 4px solid rgb(29, 252, 9);
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+
+/* Add margin to create space between squares */
+.square + .square {
+  margin-left: 2px; /* Adjust as needed */
+}
+
+/* Add styles for the winning squares */
+.square.winner {
+  background-color: rgb(11, 242, 30);
+}
+
+.main.draw {
+  background-color: #ff0000; /* Change the background color for draw */
+}
+/* Add styles for intersecting lines */
+
+@media screen and (max-width: 200px),(max-width: 300px),(max-width: 400px),(max-width: 500px),(max-width: 600px),(max-width: 700px),(max-width: 800px),(max-width: 900px),(max-width: 1000px),(max-width: 1300px),(max-width: 1400px){
+  .main {
+    width: 90%; /* Adjust the width for smaller devices */
+  }
+
+  .square {
+    padding: 10px; /* Adjust the padding for smaller devices */
+  }
+}
+@media screen and (max-width:950px){
+  .main {
+    width: 90%; /* Adjust the width for smaller devices */
+  }
+
+  .square {
+    padding: 10px; /* Adjust the padding for smaller devices */
+  }
+}
