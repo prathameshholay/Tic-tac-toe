@@ -3,8 +3,8 @@ a Another game using react basics using vite as a tool with react for {google it
 
 # initial steps :-
  go to vscode and then create a new folder > go to terminal > type this command and follow the steps.
-1.npm create vite@latest my-vue-app -- --template react
- you will see option to choose form for the library to use then choose REACT and done.
+1."npm create vite@latest my-vue-app -- --template react" , 
+ you will see option to choose library then choose REACT.
 
 # clone the repo 
 steps 
