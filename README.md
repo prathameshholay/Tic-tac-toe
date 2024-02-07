@@ -12,3 +12,5 @@ And for making any changes just edit the code using any ide eg. vsCode.
 @dependencies required
 none 
 only used simple jsx and react functions like useState and StateChange
+
+# after cloning the repo you will only have the src folder and you just need to remove the src folder from your project and add this src folder to your project and thats it your are done and follow the step i have stated here to run the project to check results. 
